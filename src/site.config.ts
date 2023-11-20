@@ -2,8 +2,8 @@ import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
 	author: "Yuang Wei",
-	title: "Mind Power",
-	description: "An opinionated starter theme for Astro",
+	title: "Yuang's blog",
+	description: "LifeNotes journal",
 	lang: "en-GB",
 	ogLocale: "en_GB",
 	date: {
