@@ -28,8 +28,8 @@ export const menuLinks: Array<{ title: string; path: string }> = [
 		path: "/posts/",
 	},
 	{
-		title: "About",
-		path: "/about/",
+		title: "Tags",
+		path: "/tags/",
 	},
 ];
 
@@ -37,7 +37,6 @@ export const socialLinks: Array<{
 	name: string;
 	friendlyName: string;
 	link: string;
-	isWebmention?: boolean;
 }> = [
 		{
 			name: "mdi:github",
@@ -52,12 +51,16 @@ export const socialLinks: Array<{
 		{
 			name: "mdi:twitter",
 			friendlyName: "Twitter",
-			link: "https://twitter.com/yuangwya/",
+			link: "https://twitter.com/_yuangwei/",
+		},
+		{
+			name: "mdi:instagram",
+			friendlyName: "Instagram",
+			link: "https://www.instagram.com/_yuangwei/",
 		},
 		{
 			name: "mdi:email",
 			friendlyName: "email",
-			link: "mailto:yuang.wya@gmail.com",
-			isWebmention: true,
+			link: "mailto:hi@yuangwei.com",
 		},
 	];

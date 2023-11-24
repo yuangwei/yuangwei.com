@@ -12,16 +12,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-4 text-xl">Hi, there👋</h1>
 		<p class="mb-3">
-			I’m a theme for Astro, an example of how you can use this starter to create a personal
-			blog. If you want to know more about how you can customise me, add more posts, and make it
-			your own, click on one the github icon link below which will take you to my repo.
+			Hi, I'm Yuang. A software engineer. I'm here to share some of my experiences and thoughts.
 		</p>
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-5">
-		<h2 class="title mb-4 text-xl">Posts</h2>
+		<h2 class="title mb-4 text-xl">Featured</h2>
 		<ul class="space-y-3 sm:space-y-5">
 			{
 				allPostsByDate.map((p) => (

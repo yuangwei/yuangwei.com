@@ -4,4 +4,3 @@ export { getAllPosts, sortMDByDate, getUniqueTags, getUniqueTagsWithCount } from
 export { getAllPages } from './page';
 export { generateToc } from "./generateToc";
 export type { TocItem } from "./generateToc";
-export { getWebmentionsForUrl } from "./webmentions";

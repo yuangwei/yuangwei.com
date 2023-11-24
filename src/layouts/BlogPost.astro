@@ -4,7 +4,6 @@ import type { CollectionEntry } from "astro:content";
 import BaseLayout from "./Base.astro";
 import BlogHero from "@/components/blog/Hero";
 import TOC from "@/components/blog/TOC";
-import WebMentions from "@/components/blog/webmentions/index";
 
 interface Props {
 	post: CollectionEntry<"post">;
@@ -26,7 +25,6 @@ const { headings } = await post.render();
 
 	function callback(entries: IntersectionObserverEntry[]) {
 		entries.forEach((entry) => {
-			// only show the scroll to top button when the heading is out of view
 			scrollBtn.dataset.show = (!entry.isIntersecting).toString();
 		});
 	}
@@ -48,7 +46,6 @@ const { headings } = await post.render();
 				class="prose prose-sm prose-cactus mt-5 prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
 			>
 				<slot />
-				<WebMentions />
 			</div>
 		</article>
 	</div>
