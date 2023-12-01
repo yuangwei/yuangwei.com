@@ -6,20 +6,20 @@
 	:root {
 		color-scheme: light;
 		--theme-bg: 0deg 0% 100%;
-		--theme-link: 172deg 18% 41%;
+		--theme-link: 210deg 6% 12%;
 		--theme-text: 203deg 11% 15%;
-		--theme-accent: 351deg 66% 48%;
-		--theme-accent-2: 0deg 0% 7%;
+		--theme-accent: 210deg 6% 12%;
+		--theme-accent-2: 210deg 6% 12%;
 		--theme-quote: 351deg 66% 48%;
 	}
 
 	:root.dark {
 		color-scheme: dark;
 		--theme-bg: 210deg 6% 12%;
-		--theme-link: 330deg 49% 67%;
+		--theme-link: 0deg 0% 100%;
 		--theme-text: 220deg 3% 79%;
-		--theme-accent: 159deg 64% 45%;
-		--theme-accent-2: 0deg 0% 93%;
+		--theme-accent: 0deg 0% 100%;
+		--theme-accent-2: 0deg 0% 100%;
 		--theme-quote: 102deg 100% 86%;
 	}
 
@@ -28,6 +28,6 @@
 	}
 
 	html body {
-		@apply mx-auto flex min-h-screen max-w-3xl flex-col bg-bgColor px-8 pt-8 text-sm font-normal text-textColor antialiased;
+		@apply mx-auto flex min-h-screen max-w-2xl flex-col bg-bgColor px-8 pt-3 text-sm font-normal text-textColor antialiased;
 	}
 }

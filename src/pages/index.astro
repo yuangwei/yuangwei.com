@@ -1,32 +1,13 @@
 ---
-import PageLayout from "@/layouts/Base";
-import PostPreview from "@/components/blog/PostPreview";
-import SocialList from "@/components/SocialList";
-import { getAllPosts, sortMDByDate } from "@/utils";
-
-const MAX_POSTS = 10;
-const allPosts = await getAllPosts();
-const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
-
+import Layout from '../layouts/Layout.astro';
+import SocialList from '../components/SocialList.astro';
 ---
 
-<PageLayout meta={{ title: "Home" }}>
-	<section>
-		<p class="mb-3">
-			Hi, I'm Yuang. A software engineer. I'm here to share some of my experiences and thoughts.
-		</p>
-		<SocialList />
-	</section>
-	<section aria-label="Blog post list" class="mt-5">
-		<h2 class="title mb-4 text-xl">Featured</h2>
-		<ul class="space-y-3 sm:space-y-5">
-			{
-				allPostsByDate.map((p) => (
-					<li class="flex flex-col gap-x-3 sm:flex-row">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
-	</section>
-</PageLayout>
+<Layout title="Yuang Wei">
+	<main class="flex flex-col mt-10">
+			<h1 class="font-bold text-xl mb-4">Hi, I'm Yuang.</h1>
+			<SocialList />
+	</main>
+</Layout>
+
+
